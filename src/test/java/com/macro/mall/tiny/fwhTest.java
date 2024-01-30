@@ -1,5 +1,6 @@
 package com.macro.mall.tiny;
 
+import com.macro.mall.tiny.modules.xd.dto.XdUserInfoParams;
 import com.macro.mall.tiny.modules.xd.dto.XdUserParams;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -7,6 +8,33 @@ import org.junit.jupiter.api.Test;
 
 public class fwhTest {
     public static void main(String[] args) {
+        XdUserInfoParams userInfoParams = new XdUserInfoParams();
+
+        userInfoParams.setId(1L);
+        userInfoParams.setUid("123456");
+        userInfoParams.setAudioInfo("Audio introduction");
+        userInfoParams.setPictureInfo("Picture information");
+        userInfoParams.setMeInfo("Self introduction");
+        userInfoParams.setHomeInfo("Family background introduction");
+        userInfoParams.setInterestInfo("Interest introduction");
+        userInfoParams.setLoveInfo("Love view");
+        userInfoParams.setSoulInfo("Ideal other half");
+        userInfoParams.setSingleInfo("Why single");
+        userInfoParams.setLifeInfo("Expected life");
+        userInfoParams.setTagInfo("Self tag");
+        userInfoParams.setDeleted(false);
+
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            String jsonString = mapper.writeValueAsString(userInfoParams);
+            System.out.println(jsonString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void user(String[] args) {
         XdUserParams userParams = new XdUserParams();
 
         userParams.setId(1L);

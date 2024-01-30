@@ -55,4 +55,3 @@ secure:
       - /admin/info
       - /admin/logout
       - /xd/**
-      - /xd/xdUser/**

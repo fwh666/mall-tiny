@@ -54,3 +54,5 @@ secure:
       - /admin/register
       - /admin/info
       - /admin/logout
+      - /xd/**
+      - /xd/xdUser/**

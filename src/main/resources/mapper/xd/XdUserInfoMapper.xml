@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.modules.xd.mapper.XdUserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.modules.xd.model.XdUserInfo">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="audio_info" property="audioInfo" />
+        <result column="picture_info" property="pictureInfo" />
+        <result column="me_info" property="meInfo" />
+        <result column="home_info" property="homeInfo" />
+        <result column="interest_info" property="interestInfo" />
+        <result column="love_info" property="loveInfo" />
+        <result column="soul_info" property="soulInfo" />
+        <result column="single_info" property="singleInfo" />
+        <result column="life_info" property="lifeInfo" />
+        <result column="tag_info" property="tagInfo" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+</mapper>

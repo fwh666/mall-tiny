@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.modules.xd.mapper.XdMoneyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.modules.xd.model.XdMoney">
+        <id column="id" property="id" />
+        <result column="uid" property="uid" />
+        <result column="residue_money" property="residueMoney" />
+        <result column="pay_money" property="payMoney" />
+        <result column="free_money" property="freeMoney" />
+        <result column="income_money" property="incomeMoney" />
+    </resultMap>
+
+</mapper>
